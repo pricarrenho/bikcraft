@@ -10,27 +10,24 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 24px 32px;
+  padding: 16px;
   box-sizing: border-box;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
 }
 
-.main::after {
-  content: url(/img/dec/bottom-left.svg);
-  position: absolute;
-  bottom: 260px;
-  left: 16px;
+.introduction {
+  align-self: end;
+  padding-bottom: 224px;
 }
 
 .introduction-title {
   margin-top: 16px;
   margin-bottom: 24px;
-  font-size: 50px;
+  font-size: 64px;
   color: var(--white-0);
-  line-height: 56px;
+  line-height: 64px;
 }
 
 .introduction-span {
@@ -40,8 +37,8 @@
 .introduction-text {
   color: var(--gray-2);
   margin-bottom: 24px;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 .introduction-bottom {
@@ -53,12 +50,79 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
+  position: relative;
 }
 
+.introduction-bottom::before {
+  content: url(/img/dec/bottom-left.svg);
+  position: absolute;
+  bottom: -48px;
+  left: 0px;
+}
 .introduction-photo img {
   border-radius: 4px;
 }
 
 .introduction-bottom:hover {
   background: linear-gradient(var(--primary-2), var(--primary-3));
+}
+
+@media (max-width: 1200px) {
+  .introduction-title {
+    font-size: 56px;
+  }
+
+  .introduction-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 950px) {
+  .main {
+    background-color: var(--black-1);
+  }
+
+  .introduction {
+    padding-bottom: 120px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-bg::before {
+    content: none;
+  }
+
+  .introduction-photo img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .main-bg {
+    background: linear-gradient(
+      to bottom,
+      var(--black-2) 80%,
+      var(--white-0) 80%
+    );
+  }
+
+  .introduction {
+    padding-bottom: 0px;
+  }
+
+  .introduction-title {
+    font-size: 32px;
+  }
+
+  .introduction-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .introduction-bottom::before {
+    content: none;
+  }
 }

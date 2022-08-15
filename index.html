@@ -8,41 +8,86 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="header-bg">
-        <div class="header">
-          <a href="./">
-            <img src="./img/bikcraft.svg" alt="Logo da Bikcraft" />
-          </a>
-          <nav>
-            <ul class="header-nav">
-              <li><a href="/">Bicicletas</a></li>
-              <li><a href="/">Seguros</a></li>
-              <li><a href="/">Contato</a></li>
-            </ul>
-          </nav>
+    <header class="header-bg">
+      <div class="header">
+        <a href="./">
+          <img src="./img/bikcraft.svg" alt="Logo da Bikcraft" />
+        </a>
+        <nav>
+          <ul class="header-nav">
+            <li><a href="/">Bicicletas</a></li>
+            <li><a href="/">Seguros</a></li>
+            <li><a href="/">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-bg">
+      <div class="main">
+        <div class="introduction">
+          <h1 class="introduction-title">
+            Bicicletas feitas sob medida<span class="introduction-span">.</span>
+          </h1>
+          <p class="introduction-text">
+            Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
+            para você. Explore o mundo na sua velocidade com a Bikcraft.
+          </p>
+          <a class="introduction-bottom" href="/">Escolha a sua</a>
         </div>
-      </header>
-      <main class="main-bg">
-        <div class="main">
-          <div class="introduction">
-            <h1 class="introduction-title">
-              Bicicletas feitas sob medida<span class="introduction-span"
-                >.</span
-              >
-            </h1>
-            <p class="introduction-text">
-              Bicicletas elétricas de alta precisão e qualidade, feitas sob
-              medida para você. Explore o mundo na sua velocidade com a
-              Bikcraft.
-            </p>
-            <a class="introduction-bottom" href="/">Escolha a sua</a>
-          </div>
-          <div class="introduction-photo">
-            <img src="./img/fotos/introducao.jpg" alt="Bicicleta Preta" />
-          </div>
+        <div class="introduction-photo">
+          <picture>
+            <source
+              media="(max-width: 800px)"
+              srcset="./img/bicicletas/nimbus.jpg"
+            />
+            <img
+              src="./img/fotos/introducao.jpg"
+              width="1280"
+              height="1600"
+              alt="Bicicleta Preta"
+            />
+          </picture>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
+    <article class="bicycles-list">
+      <div class="article-title">
+        <h2>escolha a sua<span class="article-span">.</span></h2>
+      </div>
+      <div>
+        <ul class="article-bicycles">
+          <li class="article-li">
+            <a href="./">
+              <img
+                src="./img/bicicletas/magic-home.jpg"
+                alt="Bicicleta Magic Might"
+              />
+            </a>
+            <h3>Magic Might</h3>
+            <span>R$ 2499</span>
+          </li>
+          <li class="article-li">
+            <a href="./">
+              <img
+                src="./img/bicicletas/nimbus-home.jpg"
+                alt="Bicicleta Nimbus Stark"
+              />
+            </a>
+            <h3>Nimbus Stark</h3>
+            <span>R$ 4999</span>
+          </li>
+          <li class="article-li">
+            <a href="./">
+              <img
+                src="./img/bicicletas/nebula-home.jpg"
+                alt="Bicicleta Nebula Cosmic"
+              />
+            </a>
+            <h3>Nebula Cosmic</h3>
+            <span>R$ 3999</span>
+          </li>
+        </ul>
+      </div>
+    </article>
   </body>
 </html>

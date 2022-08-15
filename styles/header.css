@@ -22,6 +22,7 @@
 .header-nav a {
   color: var(--white-0);
   padding: 16px;
+  display: inline-block;
   font-size: 18px;
 }
 
@@ -48,9 +49,12 @@
 
 @media (max-width: 500px) {
   .header {
-    display: grid;
-    grid: 1fr;
+    flex-direction: column;
     gap: 24px;
     justify-items: center;
+  }
+
+  .header-nav {
+    justify-content: center;
   }
 }
