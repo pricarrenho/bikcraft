@@ -1,13 +1,28 @@
-.main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  padding: 24px;
+.main-bg {
   background: linear-gradient(
     to bottom,
     var(--black-1) 80%,
     var(--white-0) 80%
   );
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.main::after {
+  content: url(/img/dec/bottom-left.svg);
+  position: absolute;
+  bottom: 260px;
+  left: 16px;
 }
 
 .introduction-title {
@@ -23,18 +38,18 @@
 }
 
 .introduction-text {
-  color: var(--gray-1);
+  color: var(--gray-2);
   margin-bottom: 24px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
 }
 
 .introduction-bottom {
   display: inline-block;
   background: linear-gradient(var(--primary-1), var(--primary-2));
-  padding: 16px 20px;
+  padding: 16px 24px;
   border-radius: 4px;
-  color: var(--cor-p5);
+  color: var(--primary-5);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
@@ -42,4 +57,8 @@
 
 .introduction-photo img {
   border-radius: 4px;
+}
+
+.introduction-bottom:hover {
+  background: linear-gradient(var(--primary-2), var(--primary-3));
 }
