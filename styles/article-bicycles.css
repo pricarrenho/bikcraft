@@ -6,7 +6,8 @@
 }
 
 .article-title {
-  padding: 40px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   font-size: 40px;
 }
 
