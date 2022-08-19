@@ -1,0 +1,98 @@
+.brief {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--primary-1);
+  position: relative;
+  margin-top: 48px;
+}
+
+.brief-img {
+  background-image: url(/img/fotos/depoimento.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brief-content {
+  padding: 80px 40px;
+  align-self: center;
+}
+
+.brief-content::before {
+  content: url(/img/dec/bottom-right.svg);
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
+
+.brief-text {
+  color: var(--gray-7);
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 900;
+  position: relative;
+  font-size: 40px;
+}
+
+.brief-text::before,
+.brief-text::after {
+  font-size: 5rem;
+  color: var(--primary-2);
+  position: absolute;
+}
+
+.brief-text::before {
+  content: "“";
+  left: -50px;
+  top: -20px;
+}
+
+.brief-text:after {
+  content: "”";
+}
+
+.brief-span {
+  font-size: 20px;
+  color: var(--primary-4);
+  margin-left: 32px;
+}
+
+@media (max-width: 1200px) {
+  .brief-content {
+    padding: 40px 20px;
+    align-self: center;
+  }
+
+  .brief-text {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .brief {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .brief-img {
+    height: 315px;
+  }
+}
+
+@media (max-width: 500px) {
+  .brief-text {
+    font-size: 24px;
+  }
+
+  .brief-img {
+    height: 246px;
+  }
+
+  .brief-span {
+    font-size: 16px;
+  }
+
+  .brief-content::before {
+    content: none;
+  }
+} ;

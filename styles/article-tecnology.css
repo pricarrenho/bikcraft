@@ -141,4 +141,9 @@
     padding-top: 24px;
     padding-bottom: 24px;
   }
+
+  .tecnology-content h2 {
+    font-size: 40px;
+    line-height: 32px;
+  }
 }
