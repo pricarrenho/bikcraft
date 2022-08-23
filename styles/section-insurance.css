@@ -1,0 +1,142 @@
+.insurance-bg {
+  background-color: var(--black-2);
+}
+
+.insurance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 48px 24px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.insurance-title {
+  grid-column: 1/-1;
+  font-size: 56px;
+  color: var(--white-0);
+}
+
+.insurance-title span {
+  color: var(--primary-1);
+}
+
+.insurance-gold,
+.insurance-silver {
+  background: var(--black-1);
+  padding: 24px 56px;
+}
+
+.insurance-silver-header,
+.insurance-gold-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 16px;
+}
+
+.insurance-silver-span,
+.insurance-gold-span {
+  color: var(--white-0);
+  font-size: 32px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+
+.insurance-silver-ul,
+.insurance-gold-ul {
+  color: var(--white-1);
+  justify-content: center;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.insurance-silver-ul li,
+.insurance-gold-ul li {
+  position: relative;
+}
+
+.insurance-silver-ul li:before,
+.insurance-gold-ul li:before {
+  content: url(/img/icones/lista.svg);
+  position: absolute;
+  left: -24px;
+}
+
+.insurance-span {
+  color: var(--gray-3);
+  text-align: end;
+  font-size: 16px;
+}
+
+.insurance-silver h3 {
+  color: var(--gray-3);
+  font-size: 32px;
+}
+
+.insurance-gold h3 {
+  color: var(--primary-2);
+  font-size: 32px;
+}
+
+.insurance-silver-button {
+  background-color: var(--gray-7);
+  color: var(--gray-0);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 16px 24px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 24px;
+}
+
+.insurance-gold-button {
+  background-color: var(--primary-1);
+  color: var(--primary-5);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 16px 24px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .insurance {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance-title {
+    font-size: 40px;
+  }
+
+  .insurance-silver-span,
+  .insurance-gold-span {
+    font-size: 24px;
+  }
+
+  .insurance-span {
+    font-size: 14px;
+  }
+
+  .insurance-silver h3,
+  .insurance-gold h3 {
+    font-size: 24px;
+  }
+
+  .insurance-silver-ul,
+  .insurance-gold-ul {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .insurance-silver-button,
+  .insurance-gold-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}

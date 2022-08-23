@@ -131,6 +131,7 @@
 @media (max-width: 500px) {
   .introduction-title {
     line-height: 40px;
+    text-align: center;
   }
 
   .introduction-buton {
