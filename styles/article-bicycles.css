@@ -64,6 +64,7 @@
   left: -16px;
   transition: 0.3s;
 }
+
 .article-li h3:hover::after {
   width: 24px;
 }

@@ -53,6 +53,12 @@
   display: inline-block;
   font-size: 24px;
   margin-top: 24px;
+  transition: 0.3s;
+}
+
+.tecnology-buton:hover {
+  color: var(--white-0);
+  border-bottom: 4px solid var(--white-0);
 }
 
 .tecnology-img img {
@@ -125,16 +131,16 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .tecnology-bg {
+    box-shadow: initial;
+  }
 }
 
 @media (max-width: 500px) {
   .tecnology-benefits {
     display: grid;
     grid-template-columns: 1fr;
-  }
-
-  .tecnology-bg {
-    box-shadow: initial;
   }
 
   .tecnology-content-container {

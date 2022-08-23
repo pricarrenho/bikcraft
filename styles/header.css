@@ -16,14 +16,29 @@
 .header-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 40px;
 }
 
 .header-nav a {
   color: var(--white-0);
-  padding: 16px;
   display: inline-block;
   font-size: 18px;
+  position: relative;
+}
+
+.header-nav a::after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: var(--white-0);
+  bottom: -4px;
+  left: 0px;
+  transition: 0.3s;
+}
+
+.header-nav a:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 900px) {
