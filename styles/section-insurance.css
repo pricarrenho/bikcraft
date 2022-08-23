@@ -33,7 +33,7 @@
 .insurance-gold-header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 16px;
+  padding: 24px 0px;
 }
 
 .insurance-silver-span,
@@ -111,12 +111,12 @@
   }
 
   .insurance-title {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .insurance-silver-span,
   .insurance-gold-span {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .insurance-span {
@@ -125,7 +125,7 @@
 
   .insurance-silver h3,
   .insurance-gold h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .insurance-silver-ul,
