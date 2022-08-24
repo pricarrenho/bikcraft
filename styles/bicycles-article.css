@@ -1,0 +1,274 @@
+.bicycles-article {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.nimbus-container,
+.magic-container,
+.nebula-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.nimbus-img img,
+.magic-img img,
+.nebula-img img {
+  border-radius: 4px;
+}
+
+.nimbus-img,
+.magic-img,
+.nebula-img {
+  position: relative;
+}
+
+.nimbus-img span,
+.magic-img span,
+.nebula-img span {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: 20px;
+  padding: 10px 8px;
+  background-color: var(--black-1);
+  color: var(--white-0);
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  font-size: 18px;
+}
+
+.nimbus-content,
+.magic-content,
+.nebula-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  place-self: start;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.nimbus-content h2::after,
+.magic-content h2::after,
+.nebula-content h2::after {
+  content: url(/img/dec/top-right.svg);
+  position: absolute;
+  top: -24px;
+  right: 10px;
+}
+
+.nimbus-content h2,
+.magic-content h2,
+.nebula-content h2 {
+  grid-column: 1/-1;
+  font-size: 32px;
+  position: relative;
+}
+
+.magic-content h2 {
+  color: var(--white-0);
+}
+
+.nimbus-content h2::before,
+.magic-content h2::before,
+.nebula-content h2::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  background-color: var(--primary-1);
+  top: -20px;
+  position: absolute;
+}
+
+.nimbus-content p,
+.magic-content p,
+.nebula-content p {
+  grid-column: 1/-1;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.nimbus-content p,
+.nebula-content p {
+  color: var(--gray-5);
+}
+
+.magic-content p {
+  color: var(--gray-2);
+}
+
+.nimbus-list,
+.magic-list,
+.nebula-list {
+  font-size: 20px;
+  line-height: 32px;
+  display: grid;
+}
+
+.nimbus-list li,
+.magic-list li,
+.nebula-list li {
+  display: flex;
+  gap: 8px;
+}
+
+.nimbus-list img,
+.magic-list img,
+.nebula-list img {
+  height: 24px;
+}
+
+.nimbus-list,
+.nebula-list {
+  color: var(--gray-5);
+}
+
+.magic-list {
+  color: var(--gray-2);
+}
+
+.nimbus-content a,
+.magic-content a,
+.nebula-content a {
+  font-size: 18px;
+  text-transform: uppercase;
+  place-self: end;
+  background: linear-gradient(var(--primary-1), var(--primary-2));
+  color: var(--primary-5);
+  font-weight: bolder;
+  padding: 16px 36px;
+  border-radius: 4px;
+  align-items: center;
+  position: relative;
+}
+
+.nimbus-content a::after,
+.magic-content a::after,
+.nebula-content a::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(../../img/icones/seta.svg);
+  transition: 0.3s;
+}
+
+.nimbus-content a:hover,
+.magic-content a:hover,
+.nebula-content a:hover {
+  background: linear-gradient(var(--primary-2), var(--primary-3));
+}
+
+.article-magic {
+  background: linear-gradient(to right, var(--white-0) 30%, var(--black-2) 30%);
+}
+
+.nimbus-content a:hover::after {
+  transform: translate(10px);
+}
+
+@media (max-width: 900px) {
+  .nimbus-container,
+  .magic-container,
+  .nebula-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .nimbus-content h2,
+  .magic-content h2,
+  .nebula-content h2 {
+    font-size: 26px;
+  }
+
+  .nimbus-content p,
+  .magic-content p,
+  .nebula-content p {
+    font-size: 16px;
+  }
+
+  .nimbus-list,
+  .magic-list,
+  .nebula-list {
+    font-size: 16px;
+  }
+
+  .nimbus-content a,
+  .magic-content a,
+  .nebula-content a {
+    font-size: 16px;
+  }
+
+  .article-magic {
+    background: var(--black-2);
+  }
+}
+
+@media (max-width: 500px) {
+  .nimbus-content h2::after,
+  .magic-content h2::after,
+  .nebula-content h2::after {
+    display: none;
+  }
+
+  .nimbus-container,
+  .magic-container,
+  .nebula-container {
+    gap: 16px;
+  }
+
+  .nimbus-content,
+  .magic-content,
+  .nebula-content {
+    gap: 16px;
+  }
+
+  .nimbus-content h2,
+  .magic-content h2,
+  .nebula-content h2 {
+    font-size: 24px;
+  }
+
+  .nimbus-content p,
+  .magic-content p,
+  .nebula-content p {
+    font-size: 16px;
+  }
+
+  .nimbus-list,
+  .magic-list,
+  .nebula-list {
+    font-size: 16px;
+  }
+
+  .nimbus-content a,
+  .magic-content a,
+  .nebula-content a {
+    font-size: 14px;
+    padding: 16px;
+  }
+
+  .nimbus-list,
+  .magic-list,
+  .nebula-list {
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nimbus-content a,
+  .magic-content a,
+  .nebula-content a {
+    place-self: start;
+  }
+}
