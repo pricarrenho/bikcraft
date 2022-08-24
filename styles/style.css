@@ -1,10 +1,11 @@
 @import "./global.css";
 @import "./theme.css";
 @import "./header.css";
-@import "./introduction.css";
+@import "./main.css";
 @import "./article-bicycles.css";
 @import "./article-tecnology.css";
 @import "./section-partners.css";
 @import "./section-brief.css";
 @import "./section-insurance.css";
 @import "./footer.css";
+@import "./bicycles-main.css";
