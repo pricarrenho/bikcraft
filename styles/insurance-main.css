@@ -1,8 +1,8 @@
-.bicycles-main-bg {
+.insurance-main-bg {
   background-color: var(--black-2);
 }
 
-.bicycles-main {
+.insurance-main {
   align-items: center;
   padding: 56px 16px;
   box-sizing: border-box;
@@ -12,48 +12,52 @@
   position: relative;
 }
 
-.bicycles-main::before {
+.insurance-main::before {
   content: url(/img/dec/top-right.svg);
   position: absolute;
   top: 48px;
   right: 10px;
 }
 
-.bicycles-main p {
+.insurance-main p {
   color: var(--gray-3);
   font-size: 24px;
   margin-bottom: 8px;
 }
 
-.bicycles-main h1 {
+.insurance-main h1 {
   color: var(--white-0);
   font-size: 64px;
 }
 
-.bicycles-main span {
+.insurance-main span {
   color: var(--primary-1);
 }
 
 @media (max-width: 1200px) {
-  .bicycles-main p {
+  .insurance-main p {
     font-size: 18px;
   }
 
-  .bicycles-main h1 {
+  .insurance-main h1 {
     font-size: 48px;
   }
 }
 
 @media (max-width: 500px) {
-  .bicycles-main p {
+  .insurance-main p {
     font-size: 16px;
   }
 
-  .bicycles-main h1 {
+  .insurance-main h1 {
     font-size: 36px;
   }
 
-  .bicycles-main::before {
+  .insurance-main::before {
     display: none;
+  }
+
+  .insurance-main {
+    padding: 24px;
   }
 }

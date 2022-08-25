@@ -1,0 +1,106 @@
+.insurance-questions {
+  padding: 56px 16px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.insurance-questions-title {
+  font-size: 40px;
+}
+
+.insurance-questions-title span {
+  color: var(--primary-1);
+}
+
+.insurance-questions-content {
+  padding: 32px;
+}
+
+.insurance-questions-content:nth-child(odd) {
+  background-color: var(--white-1);
+}
+
+.insurance-questions-content h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+}
+
+.insurance-questions-content p {
+  color: var(--gray-6);
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 80ch;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.insurance-questions-content h3::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  background-color: var(--primary-1);
+  top: 4px;
+  left: -20px;
+}
+
+.insurance-questions-content h3::before {
+  content: url(/img/icones/seta-abrir.svg);
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.insurance-questions-content h3:hover::before {
+  transform: rotate(180deg);
+}
+
+.insurance-questions-content h3:hover ~ p,
+.insurance-questions-content p:hover {
+  height: 50px;
+}
+
+@media (max-width: 1200px) {
+  .insurance-questions-title {
+    font-size: 32px;
+  }
+
+  .insurance-questions-content h3 {
+    font-size: 18px;
+  }
+
+  .insurance-questions-content p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .insurance-questions-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .insurance-questions-title {
+    font-size: 20px;
+  }
+
+  .insurance-questions-content h3:hover ~ p,
+  .insurance-questions-content p:hover {
+    height: 104px;
+  }
+}
