@@ -1,0 +1,16 @@
+.terms-article {
+  padding: 56px 16px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.terms-article p {
+  max-width: 75ch;
+  line-height: 24px;
+  color: var(--gray-6);
+}
