@@ -1,0 +1,64 @@
+.contact-main-bg {
+  background-color: var(--black-2);
+}
+
+.contact-main {
+  align-items: center;
+  padding: 56px 16px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.contact-main::before {
+  content: url(/img/dec/top-right.svg);
+  position: absolute;
+  top: 48px;
+  right: 10px;
+}
+
+.contact-main p {
+  color: var(--gray-3);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.contact-main h1 {
+  color: var(--white-0);
+  font-size: 64px;
+}
+
+.contact-main span {
+  color: var(--primary-1);
+}
+
+@media (max-width: 1200px) {
+  .contact-main p {
+    font-size: 18px;
+  }
+
+  .contact-main h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-main p {
+    font-size: 16px;
+  }
+
+  .contact-main h1 {
+    font-size: 34px;
+  }
+
+  .contact-main::before {
+    display: none;
+  }
+
+  .contact-main {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+}
