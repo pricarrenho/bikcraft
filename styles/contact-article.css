@@ -13,16 +13,16 @@
   margin-right: auto;
   display: grid;
   grid-template-columns: 3fr 5fr;
-  padding-top: 24px;
-  padding-bottom: 80px;
+  padding: 24px;
 }
 
 .contact-article-content {
-  background-color: var(--black-1);
+  background: var(--black-1) url(../../img/dec/bottom-left.svg) no-repeat bottom
+    20px left 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 56px;
+  padding: 60px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
@@ -64,8 +64,96 @@ a {
   margin-left: 28px;
 }
 
-.contact-article-form {
-  background-color: var(--white-0);
+.contact-form-bg {
+  background: var(--white-0) url(../../img/dec/bottom-right.svg) no-repeat
+    bottom 20px right 20px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.contact-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 40px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  padding: 12px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white-1);
+  border: 1px solid var(--white-2);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-email {
+  grid-column: 1/-1;
+}
+
+.form-text {
+  grid-column: 1/-1;
+}
+
+.contact-form-container label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form-container button {
+  display: block;
+}
+
+.form-button button {
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: linear-gradient(var(--primary-1), var(--primary-2));
+  color: var(--primary-5);
+  font-weight: bolder;
+  padding: 16px 36px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.form-button button:hover {
+  background: linear-gradient(var(--primary-2), var(--primary-3));
+}
+
+@media (max-width: 900px) {
+  .contact-article-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-article-content {
+    background: var(--black-1);
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-form-container {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .contact-article-content {
+    padding: 40px;
+  }
+
+  .form-button button {
+    font-size: 14px;
+    padding: 16px;
+  }
+
+  .contact-form-bg {
+    background: var(--white-0);
+  }
+
+  .contact-form-container input,
+  .contact-form-container textarea {
+    font-size: 16px;
+  }
 }
