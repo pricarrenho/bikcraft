@@ -1,0 +1,91 @@
+.bicycles-insurance-bg {
+  background: linear-gradient(
+    to bottom,
+    var(--white-0) 15%,
+    var(--black-2) 15% 85%,
+    var(--black-1) 85%
+  );
+}
+
+.bicycles-insurance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 16px;
+  place-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bicycles-insurance-content h2 {
+  font-size: 60px;
+  color: var(--white-0);
+  margin-bottom: 24px;
+}
+
+.bicycles-insurance-content span {
+  color: var(--primary-1);
+}
+
+.bicycles-insurance-content p {
+  font-size: 24px;
+  color: var(--gray-2);
+  margin-bottom: 24px;
+}
+
+.bicycles-insurance-content a {
+  background: linear-gradient(var(--primary-1), var(--primary-2));
+  padding: 16px 36px;
+  border-radius: 4px;
+  align-items: center;
+  color: var(--primary-5);
+  font-weight: bolder;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.bicycles-insurance-content a:hover {
+  background: linear-gradient(var(--primary-2), var(--primary-3));
+}
+
+@media (max-width: 1200px) {
+  .bicycles-insurance-content h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 900px) {
+  .bicycles-insurance {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .bicycles-insurance-bg {
+    background: linear-gradient(
+      to bottom,
+      var(--black-2) 90%,
+      var(--black-1) 90%
+    );
+  }
+  .bicycles-insurance-content h2 {
+    font-size: 30px;
+    margin-top: 24px;
+  }
+
+  .bicycles-insurance-content p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bicycles-insurance-content a {
+    font-size: 13px;
+    padding: 16px;
+  }
+
+  .bicycles-insurance-content p {
+    font-size: 18px;
+  }
+}

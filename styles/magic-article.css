@@ -54,22 +54,19 @@
   gap: 8px;
 }
 
-.bikcraftmagic-buy-buton {
+.bikcraftmagic-buy a {
   background: linear-gradient(var(--primary-1), var(--primary-2));
   padding: 16px 36px;
   border-radius: 4px;
   align-items: center;
-}
-
-.bikcraftmagic-buy-buton:hover {
-  background: linear-gradient(var(--primary-2), var(--primary-3));
-}
-
-.bikcraftmagic-buy-buton a {
   color: var(--primary-5);
   font-weight: bolder;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+.bikcraftmagic-buy a:hover {
+  background: linear-gradient(var(--primary-2), var(--primary-3));
 }
 
 .bikcraftmagic-buy span {
@@ -166,11 +163,8 @@
     gap: 16px;
   }
 
-  .bikcraftmagic-buy-buton {
-    padding: 16px;
-  }
-
-  .bikcraftmagic-buy-buton a {
+  .bikcraftmagic-buy a {
     font-size: 13px;
+    padding: 16px;
   }
 }

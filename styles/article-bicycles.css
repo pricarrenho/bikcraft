@@ -19,10 +19,11 @@
   gap: 32px;
   padding: 8px;
   overflow-x: auto;
+  margin-bottom: 16px;
 }
 
 .article-bicycles::-webkit-scrollbar {
-  height: 12px;
+  height: 8px;
 }
 
 .article-bicycles::-webkit-scrollbar-thumb {
