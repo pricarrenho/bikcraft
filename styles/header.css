@@ -72,4 +72,8 @@
   .header-nav {
     justify-content: center;
   }
+
+  .header-nav a::after {
+    display: none;
+  }
 }
