@@ -1,0 +1,64 @@
+.orcamento-main-bg {
+  background-color: var(--black-2);
+}
+
+.orcamento-main {
+  align-items: center;
+  padding: 56px 16px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.orcamento-main::before {
+  content: url(/img/dec/top-right.svg);
+  position: absolute;
+  top: 48px;
+  right: 10px;
+}
+
+.orcamento-main p {
+  color: var(--gray-3);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.orcamento-main h1 {
+  color: var(--white-0);
+  font-size: 64px;
+}
+
+.orcamento-main span {
+  color: var(--primary-1);
+}
+
+@media (max-width: 1200px) {
+  .orcamento-main p {
+    font-size: 18px;
+  }
+
+  .orcamento-main h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .orcamento-main p {
+    font-size: 16px;
+  }
+
+  .orcamento-main h1 {
+    font-size: 30px;
+  }
+
+  .orcamento-main::before {
+    display: none;
+  }
+
+  .orcamento-main {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+}

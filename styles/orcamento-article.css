@@ -1,0 +1,155 @@
+.orcamento-article-bg {
+  background: linear-gradient(
+    to bottom,
+    var(--black-2) 50%,
+    var(--white-1) 50%
+  );
+}
+
+.orcamento-article {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding: 24px;
+}
+
+.teste {
+  background: var(--black-1) url(/img/dec/bottom-left.svg) no-repeat bottom 20px
+    left 20px;
+  border-radius: 4px 0 0 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-article-form {
+  background: var(--white-0) url(/img/dec/bottom-right.svg) no-repeat bottom
+    20px right 20px;
+  border-radius: 0 4px 4px 0;
+  padding: 48px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-article-form h2 {
+  color: var(--gray-6);
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.orcamento-article-form h2::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  background-color: var(--primary-1);
+  top: 4px;
+  left: -10px;
+}
+
+.orcamento-article-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.orcamento-article-data input,
+.orcamento-article-delivery input {
+  padding: 12px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white-1);
+  border: 1px solid var(--white-2);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.orcamento-article-data input:focus,
+.orcamento-article-delivery input:focus {
+  outline: none;
+  border-color: var(--primary-1);
+  background: var(--white-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.orcamento-article-data label,
+.orcamento-article-delivery label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.orcamento-article-delivery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.orcamento-button {
+  display: block;
+}
+
+.orcamento-button button {
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: linear-gradient(var(--primary-1), var(--primary-2));
+  color: var(--primary-5);
+  font-weight: bolder;
+  padding: 16px 36px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.orcamento-button button:hover {
+  background: linear-gradient(var(--primary-2), var(--primary-3));
+}
+
+@media (max-width: 900px) {
+  .orcamento-article {
+    grid-template-columns: 1fr;
+  }
+
+  .teste {
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  .orcamento-article-form {
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .orcamento-article {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .orcamento-button button {
+    font-size: 14px;
+    padding: 16px;
+  }
+
+  .orcamento-article-data input,
+  .orcamento-article-delivery input {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .orcamento-article-form {
+    background: var(--white-0);
+    padding: 24px;
+  }
+
+  .orcamento-article {
+    padding-top: 0px;
+  }
+}
