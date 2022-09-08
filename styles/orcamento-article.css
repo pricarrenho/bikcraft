@@ -218,6 +218,14 @@
   .orcamento-article-form {
     border-radius: 0px 0px 4px 4px;
   }
+
+  .orcamento-article-product {
+    background: var(--black-1);
+  }
+
+  .orcamento-article-form {
+    background: var(--white-0);
+  }
 }
 
 @media (max-width: 500px) {
@@ -233,20 +241,24 @@
 
   .orcamento-article-data input,
   .orcamento-article-delivery input {
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px;
   }
 
-  .orcamento-article-form {
-    background: var(--white-0);
-    padding: 24px;
+  .orcamento-article-data label,
+  .orcamento-article-delivery label {
+    font-size: 14px;
   }
 
-  .orcamento-article-product {
-    background: var(--black-1);
+  .orcamento-article-form {
+    padding: 24px;
   }
 
   .orcamento-article {
     padding-top: 0px;
+  }
+
+  .orcamento-article-product {
+    padding: 24px;
   }
 }
